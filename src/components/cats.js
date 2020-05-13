@@ -39,14 +39,14 @@ class Cats extends React.Component {
 
        return (
                       
-            <div style={{width: "100%", overflow: "auto"}}>
-                <div style={{width: "45%", marginRight: "5%", float: "left"}}>
+            <div style={{display: "flex"}}>
+                <div style={{width: "50%"}}>
                     <h2>Cats owned by gals</h2>
                     <ul>
                         {this.state.females.map(cat => <li key={cat}>{cat}</li>)}
                     </ul>
                 </div>
-                <div style={{width: "50%", float: "left"}}>
+                <div style={{width: "50%"}}>
                     <h2>Cats owned by guys</h2>
                     <ul>
                         {this.state.males.map(cat => <li key={cat}>{cat}</li>)}
