@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import People from "../components/people";
+import Cats from "../components/cats";
 
 const IndexPage = () => (
   <Layout>
