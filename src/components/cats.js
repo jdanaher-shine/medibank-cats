@@ -8,14 +8,12 @@ class Cats extends React.Component {
     }
 
     componentDidMount(){
+        const boys = [];
+        const girls = [];
 
         fetch('https://gist.githubusercontent.com/medibank-digital/a1fc81a93200a7b9d5f8b7eae0fac6f8/raw/de10a4fcf717e6c431e88c965072c784808fd6b2/people.json')
         .then(response => response.json())
         .then((data) => {
-
-            const boys = [];
-            const girls = [];
-
             data.map(owner =>
                 owner.pets !== null ?
                     owner.gender === 'Male' ?
@@ -28,12 +26,10 @@ class Cats extends React.Component {
                                 girls.push(pet.name) : null
                     )
                 : null
-            )
+            );
 
-            this.setState({ 
-                males : boys.sort(),
-                females : girls.sort()
-            })
+            boys.length > 0 ? this.setState({ males : boys.sort() }) : this.setState({ males : ['No cats'] });
+            girls.length > 0 ? this.setState({ females : girls.sort() }) : this.setState({ females : ['No cats'] });
         })
         .catch(console.log);
     }
