@@ -4,17 +4,20 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import People from "../components/people";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <SEO title="Cats only" />
+    <h1>Cat only zone</h1>
+    <p>Only cats will be listed here.</p>
+    <p>We don't even care about their owners' names (only their owners' gender - meow!)</p>
+      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <Cats />
+
   </Layout>
 )
 
