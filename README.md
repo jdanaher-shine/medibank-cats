@@ -28,7 +28,13 @@ This code challenge was built using Gatsby.
     cd my-app
     ```
 
-3.  **Fire up Gatsby**
+3.  **Install packages**
+
+    ```shell
+    npm install
+    ```
+
+4.  **Fire up Gatsby**
 
     ```shell
     gatsby develop
