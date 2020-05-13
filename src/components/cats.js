@@ -30,8 +30,10 @@ class Cats extends React.Component {
                 : null
             )
 
-            this.setState({males:boys.sort()})
-            this.setState({females:girls.sort()})
+            this.setState({ 
+                males : boys.sort(),
+                females : girls.sort()
+            })
         })
         .catch(console.log);
     }
