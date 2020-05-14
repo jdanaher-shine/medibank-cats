@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Medibank Code Challege
+  Medibank Code Challenge
 </h1>
 
 This code challenge was built using Gatsby.
