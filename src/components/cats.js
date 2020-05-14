@@ -28,17 +28,19 @@ class Cats extends React.Component {
                 : null
             );
 
-            boys.length > 0 ? this.setState({ males : boys.sort() }) : this.setState({ males : ['No cats'] });
-            girls.length > 0 ? this.setState({ females : girls.sort() }) : this.setState({ females : ['No cats'] });
+            boys.length > 0 ?
+                this.setState({ males : boys.sort() })
+            :   this.setState({ males : ['No cats'] });
+
+            girls.length > 0 ?
+                this.setState({ females : girls.sort() })
+            :   this.setState({ females : ['No cats'] });
         })
         .catch(console.log);
     }
 
-
     render(){
-
        return (
-                      
             <div style={{display: "flex"}}>
                 <div style={{width: "50%"}}>
                     <h2>Cats owned by gals</h2>
@@ -55,7 +57,6 @@ class Cats extends React.Component {
             </div>
         ) 
     }
-    
 }
 
 export default Cats;
